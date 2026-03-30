@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { vi } from 'vitest';
+import App from './App.jsx';
+
+vi.mock('./Timer.jsx', () => ({
+  default: () => null,
+}));
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
