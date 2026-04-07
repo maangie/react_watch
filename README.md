@@ -54,6 +54,8 @@ yarn preview
 - `src/App.jsx`: アプリ全体のレイアウト
 - `src/Timer.jsx`: 日時表示コンポーネント
 - `src/index.jsx`: エントリポイント
+- `src/App.test.jsx`: App コンポーネントのテスト
+- `src/Timer.test.jsx`: Timer コンポーネントのテスト（レンダリング・表示・時刻更新）
 - `public/`: favicon や manifest などの静的ファイル
 
 ## 補足
