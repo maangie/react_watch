@@ -29,11 +29,11 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.0.1",
-    "jsdom": "^29.0.1",
+    "jsdom": "^30.0.1",
     "vite": "^8.0.16",
     "vitest": "^4.1.2"
   },
   "resolutions": {
-    "undici": "7.29.0"
+    "undici": "8.10.0"
   }
 }
