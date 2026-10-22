@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "scripts": {
     "dev": "vite",

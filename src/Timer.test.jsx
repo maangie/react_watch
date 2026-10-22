@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { act } from 'react-dom/test-utils';
+import { act } from 'react';
+import { createRoot } from 'react-dom/client';
 import { afterEach, vi } from 'vitest';
 import Timer from './Timer.jsx';
 
 let container = null;
+let root = null;
 
 /**
  * Timer コンポーネントを DOM にレンダリングし、コンテナ要素を返す
@@ -13,9 +13,10 @@ let container = null;
 function renderTimer() {
   container = document.createElement('div');
   document.body.appendChild(container);
+  root = createRoot(container);
 
   act(() => {
-    ReactDOM.render(<Timer />, container);
+    root.render(<Timer />);
   });
 
   return container;
@@ -24,10 +25,11 @@ function renderTimer() {
 afterEach(() => {
   if (container) {
     act(() => {
-      ReactDOM.unmountComponentAtNode(container);
+      root.unmount();
     });
     container.remove();
     container = null;
+    root = null;
   }
 
   document.body.innerHTML = '';
