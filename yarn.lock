@@ -631,7 +631,7 @@ tr46@^6.0.0:
   dependencies:
     punycode "^2.3.1"
 
-undici@8.12.3, undici@^8.9.0:
+undici@^8.12.3, undici@^8.9.0:
   version "8.12.3"
   resolved "https://registry.yarnpkg.com/undici/-/undici-8.12.3.tgz#e76a91feee9c275ad0f43bfc0eb632b6124d3bb6"
   integrity sha512-+fdndUTwBP86cVjihTp21hZHo7d6oj1c/47XPA3lL8mM0XHs+C4EkcjmgRsFnFk2f/UONGDy9ItBItmXsLOQHw==
